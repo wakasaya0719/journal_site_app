@@ -25,19 +25,11 @@ $update = function () {
 
     <form wire:submit="update">
         <p>
-            <label for="title">論文タイトル</label>
-            @error('title')
-                ({{ $message }})
-            @enderror
-            <br>
+            <label for="title">論文タイトル</label><br>
             <input type="text" wire:model="title" id="title">
         </p>
         <p>
-            <label for="body">本文</label>
-            @error('body')
-                ({{ $message }})
-            @enderror
-            <br>
+            <label for="body">本文</label><br>
             <textarea wire:model="body" id="body"></textarea>
         </p>
         <button type="submit">更新</button>

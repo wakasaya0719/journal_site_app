@@ -19,19 +19,11 @@ $store = function () {
 
     <form wire:submit="store">
         <p>
-            <label for="title">論文タイトル</label>
-            @error('title')
-                <span class="error">({{ $message }})</span>
-            @enderror
-            <br>
+            <label for="title">論文タイトル</label><br>
             <input type="text" wire:model="title" id="title">
         </p>
         <p>
-            <label for="body">本文</label>
-            @error('title')
-                <span class="error">({{ $message }})</span>
-            @enderror
-            <br>
+            <label for="body">本文</label><br>
             <textarea wire:model="body" id="body"></textarea>
         </p>
 
